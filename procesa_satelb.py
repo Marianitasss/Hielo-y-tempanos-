@@ -85,4 +85,3 @@ sumalistas=pd.DataFrame(d)
 print(sumalistas)
 sumalistas.to_csv(salida+'/'+'sumalistas3',sep='\t')
 
-https://stackoverflow.com/questions/55036875/how-to-continue-loop-while-checking-if-file-exists-using-function-in-python
