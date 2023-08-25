@@ -91,19 +91,6 @@ python main.py D:\Programacion\python\tempanos\NRC_Python_Iceberg_Drift_Model-II
 
 
 
-cd C:\Proyectos\tempanos\NRC_Python_Iceberg_Drift_Model-IIL_size\source\system
-
-
-
-
-python main.py D:\Programacion\python\tempanos\NRC_Python_Iceberg_Drift_Model-IIL_size\source\system
-
-
-
-
-
-
-
 
 Correr una prueba usando bajando los témpanos de glaciología: código Facu
 De glacio se necesitan dos cosas: 
@@ -137,26 +124,6 @@ correr
 python main.py D:\Programacion\python\tempanos\NRC_Python_Iceberg_Drift_Model-IIL_size\tests\1-berg-no-ensemble\BergModel.in
 
 
-
-
-conda activate icebergshn
-
-
-cd
-Proyectos\tempanos\NRC_Python_Iceberg_Drift_Model-IIL_size\shapefile_py
-
-
-python main.py C:\Proyectos\tempanos\NRC_Python_Iceberg_Drift_Model-IIL_size\tests\1-berg-no-ensemble\BergModel.in
-
-
-
-
-
-
-
-
-
-
 Para graficar con una prueba manual
 Primero preparar Berg.in y obtener un Berg.out con el main.py de Facundo que baja los archivos de la página del servicio con la última carta de témpanos (leer Correr una prueba usando bajando los témpanos de glaciología: código Facu)
 
@@ -168,11 +135,7 @@ Luego se corre a partir de: #%% Separamos de bergout los datos de témpanos sing
 
 
 Como graficar
-python berg_out_plot.py D:\Programacion\python\tempanos\NRC_Python_Iceberg_Drift_Model-IIL_size\tests\1-berg-no-ensemble\BergModel.in (para prueba no me funciono)
-
-
-
-
+python berg_out_plot.py D:\Programacion\python\tempanos\NRC_Python_Iceberg_Drift_Model-IIL_size\tests\1-berg-no-ensemble\BergModel.in 
 
 
 Copernicus:
