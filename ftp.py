@@ -52,15 +52,29 @@ with open(chart, "wb") as file:
 
 #Descargamos el archivo de la NAVAREA de tempanos singulares que necesitamos 
 
-NAVAREA=ftp.dir('NAVAREA')
-print(NAVAREA)
-ftp.cwd('NAVAREA')
-navareaa='NAVAREAVI_'+str(dia_navarea)+'.txt'
-print(navareaa)
-lf = open(navareaa, "wb")
-ftp.retrbinary("RETR " + navareaa, lf.write)
+# NAVAREA=ftp.dir('NAVAREA')
+# print(NAVAREA)
+# ftp.cwd('NAVAREA')
+# navareaa='NAVAREAVI_'+str(dia_navarea)+'.txt'
+# print(navareaa)
+# lf = open(navareaa, "wb")
+# ftp.retrbinary("RETR " + navareaa, lf.write)
+# lf.close()
 
+
+
+navarea_singular='REPORTE_TEMPANOS_20240113'+'.txt'
+
+file_singulares=ftp.dir('TEMPANOS MARIANA')
+print(file_singulares)
+
+ftp.cwd('TEMPANOS MARIANA')
+lf = open(navarea_singular, "wb")
+
+ftp.retrbinary("RETR " + navarea_singular, lf.write)
 lf.close()
+
+
 
 
 ftp.quit()
