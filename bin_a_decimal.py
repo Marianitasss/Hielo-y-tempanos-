@@ -45,7 +45,7 @@ with open(ruta + filebin, 'rb') as f:
     # Salta los primeros nbytes_header bytes del archivo
     f.seek(nbytes_header)
     # Lee los datos como un array unidimensional de enteros sin signo de 1 byte
-    sic1d = np.fromfile(f, dtype=np.uint8, count=ny * nx)
+    sic = np.fromfile(f, dtype=np.uint8, count=ny * nx)
 
 # Aplica la escala, el factor de conversión y crea la matriz 'sic' (sea ice concentration)
 sic = sic * scalef_conc * scaling
