@@ -32,7 +32,7 @@ scalef_conc = 1 / 250  # The data are 250 times larger than they are supposed to
 scaling = 100.0  # convert fractional 
 
 # Cantidad de bytes 
-nbytes_sic = 1    # The data is stored as 4-byte int
+# The data is stored as 4-byte int
 nbytes_header = 300  # The number of bytes allocated to header
 read_mode = "little"  # not endian convention
 
