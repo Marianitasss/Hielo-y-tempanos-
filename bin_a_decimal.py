@@ -18,7 +18,7 @@ ruta = 'C:/Proyectos/Hielo_Marino/codigo/'
 #El nombre del archivo cambia mes a mes, agregar la extensión .bin
 filebin='nt_202402_f18_nrt_s.bin'
 
-#Nombre del archivo procesado con extensin .txt
+#Nombre del archivo procesado con extensión .txt
 procesado = '202402.txt'
 
 ####################################################################################################
