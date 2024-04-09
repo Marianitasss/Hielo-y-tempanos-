@@ -50,7 +50,7 @@ with open(ruta + filebin, 'rb') as f:
 # Aplica la escala, el factor de conversión y crea la matriz 'sic' (sea ice concentration)
 sic = sic * scalef_conc * scaling
 
-# Reemplazar valores específicos
+# Reemplazar valores específicos: la tierra son los datos -8888; la costa son los datos -7777
 sic[sic == 101.2] = -7777
 sic[sic == 101.6] = -8888
 
