@@ -47,15 +47,15 @@ with open(ruta + filebin, 'rb') as f:
     # Lee los datos como un array unidimensional de enteros sin signo de 1 byte
     sic1d = np.fromfile(f, dtype=np.uint8, count=ny * nx)
 
-# Aplica la escala, el factor de conversión y crea la matriz 'sic'
-sic1d = sic1d * scalef_conc * scaling
+# Aplica la escala, el factor de conversión y crea la matriz 'sic' (sea ice concentration)
+sic = sic * scalef_conc * scaling
 
 # Reemplazar valores específicos
-sic1d[sic1d == 101.2] = -7777
-sic1d[sic1d == 101.6] = -8888
+sic[sic == 101.2] = -7777
+sic[sic == 101.6] = -8888
 
 # Guardar los valores en un archivo de texto
-np.savetxt(procesado, sic1d, fmt='%8.2f')
+np.savetxt(procesado, sic, fmt='%8.2f')
 
 
 
